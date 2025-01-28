@@ -4,6 +4,9 @@
   "main": "src/app.ts",
   "license": "MIT",
   "type": "module",
+  "dependencies": {
+    "ccxt": "^4.4.53"
+  },
   "devDependencies": {
     "@types/node": "^22.12.0",
     "eslint": "^9.19.0",
