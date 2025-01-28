@@ -1,0 +1,13 @@
+{
+  "name": "trade",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "eslint": "^9.19.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
