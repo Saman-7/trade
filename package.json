@@ -5,7 +5,9 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "ccxt": "^4.4.53"
+    "ccxt": "^4.4.53",
+    "dayjs": "^1.11.13",
+    "tulind": "^0.8.20"
   },
   "devDependencies": {
     "@types/node": "^22.12.0",
