@@ -12,8 +12,8 @@ for (const timeframe of saveTimeframes) {
   const customDir = "data";
   const exists = await doesFileExist(customDir, `${timeframe}.json`);
   if (!exists) {
-    console.log(`⚙️  No Candles Found for ${timeframe}, Creating ...`);
-    const candles = await getCandles(Symbols.BTC, timeframe, "days", 1);
+    console.log(`🔧 No Candles Found for ${timeframe}, Creating ...`);
+    const candles = await getCandles(Symbols.BTC, timeframe, 500);
     await saveCandlesToFile(timeframe, candles);
   } else {
     console.log(`✅ Candles Found for ${timeframe}, Skipping ...`);
