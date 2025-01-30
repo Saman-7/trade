@@ -1,4 +1,4 @@
-type Divergence = { type: "positive" | "negative"; index: number };
+export type Divergence = { type: "positive" | "negative"; index: number };
 
 export const calculateDivergence = (
   prices: Array<number>,
