@@ -2,11 +2,11 @@ import { Num } from "ccxt";
 
 export type Candle = {
   timestamp: string;
-  open: Num;
-  high: Num;
-  low: Num;
-  close: Num;
-  volume: Num;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+  volume: number;
 };
 
 export const Candle = [
