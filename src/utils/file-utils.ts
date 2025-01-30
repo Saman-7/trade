@@ -13,7 +13,7 @@ export const ensureDirectoryExists = async (customDir: string) => {
   try {
     await fs.mkdir(dirPath, { recursive: true });
   } catch (error) {
-    console.error(`❌ Error creating directory: ${error}`);
+    console.error(`❌ Error Creating Directory: ${error}`);
   }
 };
 
@@ -32,4 +32,18 @@ export const doesFileExist = async (
 
 export const getFilePath = (customDir: string, filename: string): string => {
   return path.join(getDataDir(customDir), filename);
+};
+
+export const readJsonFile = async <T>(
+  customDir: string,
+  filename: string
+): Promise<T | null> => {
+  try {
+    const filePath = getFilePath(customDir, filename);
+    const data = await fs.readFile(filePath, "utf-8");
+    return JSON.parse(data) as T;
+  } catch (error) {
+    console.error(`❌ Error Reading JSON File: ${error}`);
+    return null;
+  }
 };
