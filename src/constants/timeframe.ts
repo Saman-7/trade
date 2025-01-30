@@ -2,7 +2,7 @@ export type Timeframe = (typeof Timeframe)[number];
 
 export const Timeframe = [
   "1m",
-  "3",
+  "3m",
   "5m",
   "15m",
   "30",
